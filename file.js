@@ -18,3 +18,4 @@ fs.writeFile("./test.txt","hello diksha!",(err)=>{});
 )*/
 fs.appendFile("./test.txt","what happened?",(err)=>{});
 fs.cpSync("./test.txt","./copy.txt")
+
