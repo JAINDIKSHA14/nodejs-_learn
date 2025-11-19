@@ -2,7 +2,7 @@ const fs=require("fs");
 //sync
 //fs.writeFileSync("./test.txt","hello world");
 //async
-fs.writeFile("./test.txt","hello diksha!",(err)=>{});
+//fs.writeFile("./test.txt","hello diksha!",(err)=>{});
 //sync
 //const result=fs.readFileSync("./test.txt","utf-8");
 //console.log(result);
@@ -16,6 +16,11 @@ fs.writeFile("./test.txt","hello diksha!",(err)=>{});
         }
     }
 )*/
-fs.appendFile("./test.txt","what happened?",(err)=>{});
-fs.cpSync("./test.txt","./copy.txt")
+fs.appendFile("./test.txt","what happened?", (err)=>{});
+//fs.cpSync("./test.txt","./copy.txt");
+//fs.unlinkSync("./copy.txt");
+console.log(fs.statSync("./test.txt"));
+
+
+
 
